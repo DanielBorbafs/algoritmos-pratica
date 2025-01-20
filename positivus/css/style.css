@@ -59,6 +59,7 @@ header {
   color: #000000;
   transition: 0.1s ease-out;
   font-weight: 500;
+  transform: translateY(10%);
 }
 
 .navbar_btn {
@@ -78,4 +79,36 @@ header {
   background-color: var(--primary-green);
   transform: translateY(10%);
   transition: 0.1s ease-out;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    width: 180px;
+  }
+  .navbar_list {
+    display: block;
+  }
+
+  #toggle {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .navbar_list {
+    display: flex;
+    flex-direction: row;
+    & a {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 1rem;
+    }
+  }
 }
