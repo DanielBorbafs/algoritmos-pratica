@@ -1,4 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
 :root {
-    --primary-green: #B9FF66;
-    
+  --primary-green: #b9ff66;
+  --primary-black: #000000;
+  --secondary-black: #191a23;
+  --color-gray: #f3f3f3;
+  --font-family: 'Space Grotesk', serif;
+  --h1-size: 60px;
+  --size-subtitle: 40px;
+  --font-size-mobile: 18px;
+}
+
+* {
+  font-family: 'Space Grotesk', serif;
+}
+
+/* ============= NAVBAR ===============*/
+
+header {
+  padding: 0.6rem;
+}
+
+.logo {
+  width: 140px;
+}
+
+.navbar_list {
+  display: none; /* Menu está oculto */
+  border-top: 1px solid var(--color-gray);
+}
+
+.navbar_list a {
+  margin: 8px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  font-size: var(--font-size-mobile);
+  color: var(--primary-black);
+  font-weight: 400;
+}
+
+#toggle {
+  position: absolute;
+  font-size: 32px;
+  right: 0;
+  top: 0;
+  padding: 1rem;
+  color: var(--secondary-black);
+}
+
+.navbar_list.active {
+  display: block;
+  transition: 0.3s ease-in;
+}
+
+.navbar_list a:hover {
+  font-size: 20px;
+  color: #000000;
+  transition: 0.1s ease-out;
+  font-weight: 500;
+}
+
+.navbar_btn {
+  display: flex;
+  justify-content: center;
+}
+
+.btn_nav {
+  font-size: 20px;
+  padding: 16px;
+  border: 1px solid var(--secondary-black);
+  border-radius: 14px;
+  width: 220px;
+}
+
+.btn_nav:hover {
+  background-color: var(--primary-green);
+  transform: translateY(10%);
+  transition: 0.1s ease-out;
 }
