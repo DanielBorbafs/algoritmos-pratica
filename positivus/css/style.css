@@ -6,7 +6,11 @@
   --secondary-black: #191a23;
   --color-gray: #f3f3f3;
   --font-family: 'Space Grotesk', serif;
-  --h1-size: 60px;
+  --h1-size-desktop: 60px;
+  --h1-size-mobile: 40px;
+  --p-size-mobile: 1rem;
+  --p-size-desktop: 1.2rem;
+  --padding-padrão: 0.6rem;
   --size-subtitle: 40px;
   --font-size-mobile: 18px;
 }
@@ -17,8 +21,8 @@
 
 /* ============= NAVBAR ===============*/
 
-header {
-  padding: 0.6rem;
+body {
+  padding: var(--padding-padrão);
 }
 
 .logo {
@@ -60,6 +64,7 @@ header {
   transition: 0.1s ease-out;
   font-weight: 500;
   transform: translateY(10%);
+  transition: 0.3s ease-in;
 }
 
 .navbar_btn {
@@ -80,6 +85,37 @@ header {
   transform: translateY(10%);
   transition: 0.1s ease-out;
   cursor: pointer;
+}
+
+/* ============== HERO SECTION ============= */
+
+.hero-about {
+  margin-top: 1rem;
+}
+
+.title {
+  font-size: var(--h1-size-mobile);
+  text-align: start;
+  line-height: 1.1;
+}
+p {
+  font-size: var(--font-size-mobile);
+  text-align: start;
+  margin-top: 8px;
+}
+
+.hero_about_primary {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero_about_primary {
+  flex-direction: column; /* Alinha os elementos verticalmente */
+  text-align: center; /* Centraliza o conteúdo no mobile */
+}
+
+.hero_img {
+  order: -1;
 }
 
 @media (min-width: 768px) {
@@ -110,5 +146,81 @@ header {
       justify-content: center;
       margin: 1rem;
     }
+  }
+
+  /* HERO */
+  .hero-about {
+    margin-top: 2.5rem;
+    padding: 1rem;
+  }
+  .hero_img {
+    order: 0; /* Coloca a imagem acima do texto */
+    max-height: 600px;
+  }
+
+  .hero_about_primary {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    gap: 2.5rem;
+  }
+
+  .hero-about_text {
+    max-width: 620px;
+    & h1 {
+      font-size: var(--h1-size-desktop);
+    }
+    & p {
+      font-size: var(--p-size-desktop);
+    }
+  }
+
+  .list-marcas {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+  }
+
+  .list-marcas img {
+    transition: 0.3s ease-in;
+  }
+
+  .list-marcas img:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+  }
+}
+
+/* so para a animmacao */
+
+@media (max-width: 768px) {
+  .list-marcas {
+    display: flex;
+    gap: 16px;
+    overflow: hidden;
+    padding: var(--padding-padrão);
+  }
+
+  .list-marcas img {
+    height: auto;
+    width: 100px; /* Ajuste conforme necessário */
+    animation: scrollLogos 5s linear infinite; /* Animação de movimento */
+  }
+
+  @keyframes scrollLogos {
+    0% {
+      transform: translateX(0); /* Começa no início */
+    }
+    100% {
+      transform: translateX(-100%); /* Move as imagens para a esquerda */
+    }
+  }
+  .list-marcas::after {
+    content: '';
+    display: block;
+    flex-shrink: 0;
+    width: 100px; /* Ajuste conforme a largura das imagens */
   }
 }
