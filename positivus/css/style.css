@@ -8,6 +8,7 @@
   --font-family: 'Space Grotesk', serif;
   --h1-size-desktop: 60px;
   --h1-size-mobile: 40px;
+  --h2-size-mobile: 32px;
   --p-size-mobile: 1rem;
   --p-size-desktop: 1.2rem;
   --padding-padrão: 0.6rem;
@@ -23,6 +24,7 @@
 
 body {
   padding: var(--padding-padrão);
+  position: relative;
 }
 
 .logo {
@@ -118,6 +120,185 @@ p {
   order: -1;
 }
 
+/* ================= SERVICES =================*/
+
+.services {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.services_text {
+  margin-top: 4rem;
+}
+
+.services_title {
+  font-size: var(--h2-size-mobile);
+  background-color: var(--primary-green);
+  display: inline-block; /* Faz o fundo se ajustar ao tamanho do texto */
+  padding: 0.2rem 0.8rem; /* Adiciona espaçamento entre o texto e a borda */
+  border-radius: 4px;
+}
+
+.services_text {
+  text-align: center; /* Centraliza o conteúdo dentro da div */
+}
+
+.services_p {
+  text-align: center;
+  font-size: var(--p-size-mobile);
+}
+
+.services__cards_list {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.card_item_title {
+  font-size: 26px;
+}
+
+.card_item {
+  position: relative;
+
+  width: 80%;
+  min-height: 400px;
+  min-width: 320px;
+  border-radius: 1rem;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 8px solid black;
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.card_btn {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 2rem;
+}
+
+.card_item_title {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  left: 0;
+  padding: 1.8rem;
+}
+
+.btn_card {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.btn_card span {
+  font-size: 18px;
+  display: none;
+}
+
+.services__cards_list .card_item:nth-child(2) {
+  background-color: var(--primary-green);
+}
+
+.services__cards_list .card_item:nth-child(3) {
+  background-color: black;
+}
+
+.services__cards_list .card_item:nth-child(5) {
+  background-color: var(--primary-green);
+}
+
+.services__cards_list .card_item:nth-child(6) {
+  background-color: black;
+}
+
+.card_3 {
+  color: #f3f3f3;
+}
+
+.icon_top {
+  position: fixed; /* Faz o ícone ficar fixo na tela durante o scroll */
+  right: 0; /* Posiciona o ícone à direita da tela */
+  bottom: 1rem; /* Coloca o ícone um pouco acima da parte inferior da tela (ajuste conforme necessário) */
+  padding: 0rem 1rem; /* Ajusta o padding conforme desejado */
+}
+
+.card_item_info {
+  background-color: rgba(197, 197, 197, 0.404);
+  width: 350px;
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+.card_item_text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card_item_info_title {
+  font-size: 24px;
+}
+
+.card_item_text > a {
+  text-decoration: none;
+  padding: 1.5rem;
+  background-color: #191a23;
+  color: #ffff;
+  text-align: center;
+  font-size: 18px;
+}
+
+/* so para a animmacao */
+
+@media (max-width: 768px) {
+  .list-marcas {
+    display: flex;
+    gap: 16px;
+    overflow: hidden;
+    padding: var(--padding-padrão);
+  }
+
+  .list-marcas img {
+    height: auto;
+    width: 100px; /* Ajuste conforme necessário */
+    animation: scrollLogos 5s linear infinite; /* Animação de movimento */
+  }
+
+  @keyframes scrollLogos {
+    0% {
+      transform: translateX(0); /* Começa no início */
+    }
+    100% {
+      transform: translateX(-100%); /* Move as imagens para a esquerda */
+    }
+  }
+  .list-marcas::after {
+    content: '';
+    display: block;
+    flex-shrink: 0;
+    width: 100px; /* Ajuste conforme a largura das imagens */
+  }
+}
+
 @media (min-width: 768px) {
   .logo {
     width: 180px;
@@ -152,6 +333,7 @@ p {
   .hero-about {
     margin-top: 2.5rem;
     padding: 1rem;
+    height: 70vh;
   }
   .hero_img {
     order: 0; /* Coloca a imagem acima do texto */
@@ -191,36 +373,14 @@ p {
     cursor: pointer;
     transform: translateY(-10px);
   }
-}
 
-/* so para a animmacao */
-
-@media (max-width: 768px) {
-  .list-marcas {
+  .services__cards_list {
     display: flex;
-    gap: 16px;
-    overflow: hidden;
-    padding: var(--padding-padrão);
+    flex-direction: row-reverse;
+    margin-top: 1.4rem;
   }
 
-  .list-marcas img {
-    height: auto;
-    width: 100px; /* Ajuste conforme necessário */
-    animation: scrollLogos 5s linear infinite; /* Animação de movimento */
-  }
-
-  @keyframes scrollLogos {
-    0% {
-      transform: translateX(0); /* Começa no início */
-    }
-    100% {
-      transform: translateX(-100%); /* Move as imagens para a esquerda */
-    }
-  }
-  .list-marcas::after {
-    content: '';
-    display: block;
-    flex-shrink: 0;
-    width: 100px; /* Ajuste conforme a largura das imagens */
+  .card_item {
+    width: 25%;
   }
 }
