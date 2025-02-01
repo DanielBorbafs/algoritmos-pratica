@@ -314,6 +314,52 @@ a {
   color: var(--primary-green);
 }
 
+/* ======================== PERGUNTAS ==================== */
+
+.perguntas_container {
+  margin-top: 1.8rem;
+}
+.perguntas_item_title_descricao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.perguntas_item_title_descricao h3 {
+  font-size: 32px;
+}
+
+.perguntas_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f3f3f3;
+  padding: 0.4rem;
+  border-radius: 8px;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom: 4px solid black;
+}
+
+.parte-01 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.perguntas_item i {
+  font-size: 32px;
+  color: #191a23;
+}
+
+.perguntas_item_text {
+  border-top: 1px solid var(--secondary-black);
+  display: none;
+}
 /* so para a animmacao */
 
 @media (max-width: 768px) {
