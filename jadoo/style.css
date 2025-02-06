@@ -151,18 +151,30 @@ img {
 }
 
 /* ====================== LISTA CATEGORIAS ==================== */
+<<<<<<< HEAD
 .container {
+=======
+.categorias_text {
+>>>>>>> 00d4f2d0dafc9cce942be2407f1ae97361844a46
     text-align: center;
     padding: 1.5rem;
 }
 
+<<<<<<< HEAD
 .container_text span {
+=======
+.categorias_text span {
+>>>>>>> 00d4f2d0dafc9cce942be2407f1ae97361844a46
     font-size: 20;
     font-family: var(--font-open-sans);
     font-weight: 600;
 }
 
+<<<<<<< HEAD
 .container_text h2 {
+=======
+.categorias_text h2 {
+>>>>>>> 00d4f2d0dafc9cce942be2407f1ae97361844a46
     font-family: var(--font-primary);
     font-size: 50px;
 }
@@ -211,6 +223,7 @@ img {
 }
 
 
+<<<<<<< HEAD
 /* ====== DESTINOS LISTA CARDS =========== */
 
 
@@ -277,6 +290,20 @@ img {
     color: #5E6282;
     font-size: 1.2rem;
 }
+=======
+/* ======== NOTEBOOK =========== */
+@media(max-width:170px) {
+    body {
+        background-color: red;
+    }
+
+    .hero_text h1 {
+        background-color: red;
+        font-size: 30px;
+    }
+}
+
+>>>>>>> 00d4f2d0dafc9cce942be2407f1ae97361844a46
 
 
 /* ===== MOBILE ======= */
@@ -322,6 +349,7 @@ img {
         width: 100%;
         margin-top: 1rem;
     }
+<<<<<<< HEAD
 
     .destinos{
         display: flex;
@@ -342,4 +370,6 @@ img {
        align-items: center;
        gap: 2rem;
     }
+=======
+>>>>>>> 00d4f2d0dafc9cce942be2407f1ae97361844a46
 }

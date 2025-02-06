@@ -32,7 +32,8 @@ body {
 }
 
 .navbar_list {
-  display: none; /* Menu está oculto */
+  display: none;
+  /* Menu está oculto */
   border-top: 1px solid var(--color-gray);
 }
 
@@ -100,6 +101,7 @@ body {
   text-align: start;
   line-height: 1.1;
 }
+
 p {
   font-size: var(--font-size-mobile);
   text-align: start;
@@ -112,8 +114,10 @@ p {
 }
 
 .hero_about_primary {
-  flex-direction: column; /* Alinha os elementos verticalmente */
-  text-align: center; /* Centraliza o conteúdo no mobile */
+  flex-direction: column;
+  /* Alinha os elementos verticalmente */
+  text-align: center;
+  /* Centraliza o conteúdo no mobile */
 }
 
 .hero_img {
@@ -137,13 +141,16 @@ p {
 .services_title {
   font-size: var(--h2-size-mobile);
   background-color: var(--primary-green);
-  display: inline-block; /* Faz o fundo se ajustar ao tamanho do texto */
-  padding: 0.2rem 0.8rem; /* Adiciona espaçamento entre o texto e a borda */
+  display: inline-block;
+  /* Faz o fundo se ajustar ao tamanho do texto */
+  padding: 0.2rem 0.8rem;
+  /* Adiciona espaçamento entre o texto e a borda */
   border-radius: 4px;
 }
 
 .services_text {
-  text-align: center; /* Centraliza o conteúdo dentro da div */
+  text-align: center;
+  /* Centraliza o conteúdo dentro da div */
 }
 
 .services_p {
@@ -235,10 +242,14 @@ p {
 }
 
 .icon_top {
-  position: fixed; /* Faz o ícone ficar fixo na tela durante o scroll */
-  right: 0; /* Posiciona o ícone à direita da tela */
-  bottom: 1rem; /* Coloca o ícone um pouco acima da parte inferior da tela (ajuste conforme necessário) */
-  padding: 0rem 1rem; /* Ajusta o padding conforme desejado */
+  position: fixed;
+  /* Faz o ícone ficar fixo na tela durante o scroll */
+  right: 0;
+  /* Posiciona o ícone à direita da tela */
+  bottom: 1rem;
+  /* Coloca o ícone um pouco acima da parte inferior da tela (ajuste conforme necessário) */
+  padding: 0rem 1rem;
+  /* Ajusta o padding conforme desejado */
 }
 
 .card_item_info {
@@ -258,7 +269,7 @@ p {
   font-size: 24px;
 }
 
-.card_item_text > a {
+.card_item_text>a {
   text-decoration: none;
   padding: 1.5rem;
   background-color: #191a23;
@@ -274,6 +285,7 @@ p {
   gap: 16px;
   overflow: scroll;
 }
+
 .slide_item {
   padding: 2rem;
   min-width: 320px;
@@ -287,6 +299,7 @@ p {
   flex-direction: column;
   gap: 1rem;
 }
+
 .slide_item p {
   color: #f3f3f3;
   font-size: 1rem;
@@ -319,6 +332,7 @@ a {
 .perguntas_container {
   margin-top: 1.8rem;
 }
+
 .perguntas_item_title_descricao {
   display: flex;
   justify-content: center;
@@ -358,8 +372,12 @@ a {
 
 .perguntas_item_text {
   border-top: 1px solid var(--secondary-black);
+}
+
+#texto_pergunta {
   display: none;
 }
+
 /* so para a animmacao */
 
 @media (max-width: 768px) {
@@ -372,23 +390,30 @@ a {
 
   .list-marcas img {
     height: auto;
-    width: 100px; /* Ajuste conforme necessário */
-    animation: scrollLogos 5s linear infinite; /* Animação de movimento */
+    width: 100px;
+    /* Ajuste conforme necessário */
+    animation: scrollLogos 5s linear infinite;
+    /* Animação de movimento */
   }
 
   @keyframes scrollLogos {
     0% {
-      transform: translateX(0); /* Começa no início */
+      transform: translateX(0);
+      /* Começa no início */
     }
+
     100% {
-      transform: translateX(-100%); /* Move as imagens para a esquerda */
+      transform: translateX(-100%);
+      /* Move as imagens para a esquerda */
     }
   }
+
   .list-marcas::after {
     content: '';
     display: block;
     flex-shrink: 0;
-    width: 100px; /* Ajuste conforme a largura das imagens */
+    width: 100px;
+    /* Ajuste conforme a largura das imagens */
   }
 }
 
@@ -396,14 +421,17 @@ a {
   .container {
     max-width: 1420px;
   }
+
   body {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   .logo {
     width: 180px;
   }
+
   .navbar_list {
     display: block;
   }
@@ -421,6 +449,7 @@ a {
   .navbar_list {
     display: flex;
     flex-direction: row;
+
     & a {
       text-align: center;
       display: flex;
@@ -436,8 +465,10 @@ a {
     padding: 1rem;
     height: 70vh;
   }
+
   .hero_img {
-    order: 0; /* Coloca a imagem acima do texto */
+    order: 0;
+    /* Coloca a imagem acima do texto */
     max-height: 600px;
   }
 
@@ -452,9 +483,11 @@ a {
 
   .hero-about_text {
     max-width: 620px;
+
     & h1 {
       font-size: var(--h1-size-desktop);
     }
+
     & p {
       font-size: var(--p-size-desktop);
     }
@@ -501,6 +534,7 @@ a {
     max-width: 900px;
     text-align: start;
   }
+
   .slide_item {
     width: 400px;
     border-radius: 0px;
