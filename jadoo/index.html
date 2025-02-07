@@ -166,8 +166,87 @@
           </div>
         </div>
       </section>
+      <section class="container testimonials">
+        <div class="row">
+          <div class="col-12 col-lg-5">
+            <div class="container_text about_text">
+              <span>Testimonials</span>
+              <h2>What people say about us</h2>
+            </div>
+          </div>
+          <div class="col-12 col-lg-7 testimonials_list">
+            <div class="testimonials_list_item active">
+              <article class="testimonials_card">
+                <img src="./imgs/profile_01.jpg" alt="" />
+                <p>
+                  “On the Windows talking painted pasture yet its express
+                  parties use. Sure last upon he same as knew next. Of believed
+                  or diverted no.”
+                </p>
+                <span class="testimonials_name"> Daniel Borba </span>
+                <small>Serra, espirito santo</small>
+              </article>
+            </div>
+            <div class="testimonials_list_item">
+              <article class="testimonials_card">
+                <img src="./imgs/profile_02.jpg" alt="" />
+                <p>
+                  “On the Windows talking painted pasture yet its express pano.”
+                </p>
+                <span class="testimonials_name"> Daniel Borba </span>
+                <small>Serra, espirito santo</small>
+              </article>
+            </div>
+            <div class="testimonials_list_item active">
+              <article class="testimonials_card">
+                <img src="./imgs/profile_01.jpg" alt="" />
+                <p>
+                  “On the Windows talking painted pasture yet its express
+                  parties use. Sure last upon he same as knew next. Of believed
+                  or diverted no.”
+                </p>
+                <span class="testimonials_name"> Daniel Borba </span>
+                <small>Serra, espirito santo</small>
+              </article>
+            </div>
+
+            <div class="testimonials_list_arrows">
+              <i class="bx bx-chevron-up" id="arrow-right"></i>
+              <i class="bx bx-chevron-down" id="arrow-left"></i>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <img src="./imgs/Decore.png" alt="" class="bg" />
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const items = document.querySelectorAll('.testimonials_list_item');
+        const leftArrow = document.getElementById('arrow-right');
+        const rightArrow = document.getElementById('arrow-left');
+        let currentIndex = 0;
+
+        function showItem(index) {
+          items.forEach((item, i) => {
+            item.classList.toggle('active', i === index);
+          });
+        }
+
+        leftArrow.addEventListener('click', function () {
+          currentIndex = currentIndex > 0 ? currentIndex - 1 : items.length - 1;
+          showItem(currentIndex);
+        });
+
+        rightArrow.addEventListener('click', function () {
+          currentIndex = currentIndex < items.length - 1 ? currentIndex + 1 : 0;
+          showItem(currentIndex);
+        });
+
+        // Mostrar o primeiro item ao carregar a página
+        showItem(currentIndex);
+      });
+    </script>
   </body>
 </html>
