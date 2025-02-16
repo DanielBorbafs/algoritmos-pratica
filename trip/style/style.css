@@ -1,0 +1,23 @@
+html {
+  font-size: 16px;
+}
+
+:root {
+  /* Fontes mobile */
+  --h1-mobile: 2rem;
+  --h2-mobile: 1.8rem;
+  --h3-mobile: 1.4rem;
+  --h4-mobile: 1.2rem;
+  --a-mobile: 1rem;
+  --p-mobile: 0.8rem;
+
+  /* Cores */
+  --color-primary: #3f8be3;
+  --color-secondary: #a0c5ef;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+}
+
+@media (min-width: 768px) {
+}
