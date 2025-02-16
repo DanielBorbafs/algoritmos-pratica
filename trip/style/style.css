@@ -17,6 +17,10 @@ html {
 }
 
 /* ===== HEADER ==========*/
+
+.container {
+  width: 92%;
+}
 #burder {
   width: 28px;
   position: absolute;
@@ -72,6 +76,46 @@ html {
   transition: 0.25s;
 }
 
+/* ====================== INTRO ==================*/
+
+#bg-hero {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+#aviao {
+  display: none;
+}
+.intro_text_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.intro_text_btn a {
+  text-decoration: none;
+  font-family: poppins;
+  font-size: 1rem;
+}
+
+.btn_criar_conta {
+  color: #acacac;
+  padding: 1rem;
+  border: 1px solid;
+  border-radius: 0.2rem;
+}
+
+.btn_login {
+  color: #ffffff;
+  padding: 1rem;
+  border: 1px solid;
+  border-radius: 0.2rem;
+  background-color: var(--color-primary);
+  width: 100px;
+}
 /* Estilos para telas menores */
 @media (max-width: 768px) {
   .navbar {
@@ -88,14 +132,55 @@ html {
     position: absolute;
     top: 72px; /* Ajusta a posição do menu abaixo do navbar */
     left: 0;
-    text-align: center;
-    align-items: center;
+    background-color: #ffff;
     width: 100%;
     border-bottom: 1px solid #f2f2f2;
     padding: 2rem 0rem;
   }
 
+  .intro {
+    margin-top: 6rem;
+    overflow: hidden;
+    max-width: 400px;
+  }
+
   .links.active {
     display: flex; /* Mostra os links quando o menu está ativo */
+  }
+
+  /* ================ INTRO ===========*/
+  .intro_text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .intro_text > span,
+  p {
+    color: var(--color-primary);
+    font-weight: 600;
+    font-family: poppins;
+    font-size: var(--p-mobile);
+  }
+
+  .intro_text > h1 {
+    font-family: volkhov;
+    font-size: var(--h1-mobile);
+    font-weight: 700;
+  }
+
+  .intro_text > p {
+    color: rgb(143, 142, 142);
+    font-weight: 400;
+    line-height: 1.2rem;
+  }
+
+  #aviao {
+    display: block;
+    width: 5.4rem;
+    padding: 12px;
+    padding-right: 1rem;
+    position: absolute;
   }
 }
