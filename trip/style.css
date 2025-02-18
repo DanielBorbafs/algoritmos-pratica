@@ -215,8 +215,61 @@ header {
   justify-content: center;
   padding: 6px;
   margin-top: 4px;
+  font-family: poppins;
+  color: #4b4b4b;
+  gap: 8px;
 }
 
+/* ================== DICAS ================= */
+.container__dicas {
+  display: flex;
+}
+.dicas {
+  margin-top: 4rem;
+  padding: 2rem;
+
+  width: 100%;
+}
+.dicas_text {
+  text-align: start;
+  font-family: open sans;
+  width: 100%;
+}
+
+.dicas__etapas {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.dicas__etapas_item {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.dicas__etapas_item_text {
+  & span {
+    font-family: poppins;
+    font-size: 14px;
+  }
+  & p {
+    font-size: 14px;
+    font-family: 'open sans';
+    color: #686868;
+  }
+}
+
+.dicas__etapas_item img {
+  width: 44px;
+  object-fit: cover;
+  height: 44px;
+}
+
+#dicas-hero {
+  margin-bottom: 2rem;
+}
 /* Dispositivos móveis (retrato) */
 @media only screen and (max-width: 480px) {
   header {
@@ -292,6 +345,9 @@ header {
   .promocoes__list {
     flex-direction: column;
     gap: 2rem;
+  }
+  .container__dicas {
+    flex-direction: column;
   }
 }
 
