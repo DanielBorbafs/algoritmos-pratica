@@ -8,9 +8,11 @@
 html {
   font-size: 16px;
 }
+
 body {
   position: relative;
 }
+
 :root {
   --cor-primaria: #3c8deb;
   --a-desktop-size: 18px;
@@ -44,6 +46,7 @@ header {
   padding: 1rem;
   font-size: var(--a-desktop-size);
   font-family: poppins;
+
   & a {
     color: #4b4b4b;
     font-weight: 400;
@@ -59,10 +62,12 @@ header {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+
   & h1 {
     font-size: var(--h1-desktop);
     font-family: volkhov;
   }
+
   & p {
     font-size: var(--p-desktop-size);
     font-family: poppins;
@@ -80,6 +85,7 @@ header {
   display: flex;
   gap: 1.5rem;
 }
+
 .btn__criar__conta {
   padding: 1rem;
   border: 1px solid #4b4b4b;
@@ -109,6 +115,7 @@ header {
 .container__text {
   text-align: center;
   margin-top: 2rem;
+
   & span {
     text-transform: uppercase;
     color: var(--cor-primaria);
@@ -116,6 +123,7 @@ header {
     font-size: 18px;
     font-family: open sans;
   }
+
   & h2 {
     font-family: volkhov, sans-serif;
     font-size: 50px;
@@ -136,17 +144,20 @@ header {
   padding: 2rem;
   gap: 0.5rem;
   align-items: center;
+
   & img {
     max-width: 280px;
     display: flex;
     width: 100%;
     object-fit: cover;
   }
+
   & span {
     font-family: open sans;
     font-weight: 600;
     font-size: 20px;
   }
+
   & p {
     font-family: poppins;
     color: #5e6282;
@@ -192,11 +203,13 @@ header {
   background-color: #b6d2f33b;
   padding: 1rem;
   border-radius: 8px;
+
   & span {
     margin-left: 1rem;
     font-family: open sans;
   }
 }
+
 .promocoes__item_title {
   font-size: 18px;
   font-weight: 600;
@@ -224,12 +237,14 @@ header {
 .container__dicas {
   display: flex;
 }
+
 .dicas {
   margin-top: 4rem;
   padding: 2rem;
 
   width: 100%;
 }
+
 .dicas_text {
   text-align: start;
   font-family: open sans;
@@ -254,6 +269,7 @@ header {
     font-family: poppins;
     font-size: 14px;
   }
+
   & p {
     font-size: 14px;
     font-family: 'open sans';
@@ -295,6 +311,7 @@ header {
 
 .clientes__titulo {
   text-align: start;
+
   & h2 {
     font-size: 40px;
   }
@@ -306,6 +323,7 @@ header {
   align-items: center;
   padding: 1rem;
   border-radius: 4px;
+
   & span {
     font-size: 20px;
     color: #000000;
@@ -318,6 +336,7 @@ header {
     font-size: 16px;
     color: #686868;
   }
+
   & #img__cliente {
     max-width: 50px;
     max-height: 50px;
@@ -329,11 +348,64 @@ header {
   display: flex;
   flex-direction: column;
   gap: 2px;
+
   & img {
     width: 150px;
     max-height: 25px;
   }
 }
+
+
+/* =========================== MARCAS PARCEIRAS ======================*/
+
+.marcas h4 {
+  text-align: center;
+  margin-top: 4rem;
+  font-family: poppins;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: var(--cor-primaria);
+  font-weight: 500;
+}
+
+.marcas_list {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll 15s linear infinite;
+}
+
+.marcas_container {
+  width: 100%;
+  overflow: hidden;
+  /* Esconde o conteúdo que ultrapassar */
+  position: relative;
+  background-color: #f0f0f0;
+  /* Cor de fundo */
+  white-space: nowrap;
+  margin-top: 1.4rem;
+}
+
+.marcas_list img {
+  display: inline-block;
+  padding: 20px 40px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  border-right: 1px solid #ccc;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+    /* Começa do topo */
+  }
+
+  100% {
+    transform: translateX(-40%);
+    /* Move para cima (metade do conteúdo) */
+  }
+}
+
 
 /* Dispositivos móveis (retrato) */
 @media only screen and (max-width: 480px) {
@@ -351,6 +423,7 @@ header {
     justify-content: center;
     width: 100%;
   }
+
   .header__list a {
     font-size: var(--a-mobile-size);
   }
@@ -364,9 +437,11 @@ header {
   .about__text {
     gap: 0;
     padding: 8px;
+
     & span {
       font-size: 12px;
     }
+
     & h1 {
       font-size: 32px;
     }
@@ -376,10 +451,12 @@ header {
       margin-top: 8px;
     }
   }
+
   .about__img img {
     width: 100%;
     object-fit: cover;
   }
+
   #planner {
     position: absolute;
     top: 0;
@@ -387,6 +464,7 @@ header {
     padding: 0.4rem;
     margin-top: 1rem;
   }
+
   #decor {
     font-size: 32px;
   }
@@ -394,6 +472,7 @@ header {
   .btns {
     justify-content: center;
     margin-top: 1rem;
+
     & a {
       padding: 0;
       padding: 10px 30px;
@@ -407,10 +486,12 @@ header {
   .servicos__list {
     flex-direction: column;
   }
+
   .promocoes__list {
     flex-direction: column;
     gap: 2rem;
   }
+
   .container__dicas {
     flex-direction: column;
   }
@@ -418,6 +499,7 @@ header {
   .clientes__titulo {
     text-align: center;
   }
+
   .clientes {
     flex-direction: column;
     flex-flow: column-reverse;
@@ -432,8 +514,7 @@ header {
   }
 }
 
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-}
+@media only screen and (min-width: 481px) and (max-width: 768px) {}
 
 @media (min-width: 769px) {
   .about {
