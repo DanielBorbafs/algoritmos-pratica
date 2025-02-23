@@ -1,280 +1,362 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-</head>
+  <body>
+    <header>
+      <h2>LOGO</h2>
+      <div class="header__list">
+        <a href="#Serviços">Serviços</a>
+        <a href="#Promoções da Semana">Promoções da Semana</a>
+        <a href="#Dicas">Dicas</a>
+        <a href="#Clientes">Clientes</a>
+      </div>
+    </header>
+    <main>
+      <section class="container about">
+        <div class="about__text">
+          <span>Os melhores destinos te aguardam!</span>
+          <h1>
+            Viva momentos inesquecíveis em viagens que cabem no seu bolso<span
+              id="decor"
+              >!</span
+            >
+          </h1>
+          <p>
+            Viajar é a oportunidade perfeita para criar memórias incríveis, e
+            você não precisa gastar muito para isso! Oferecemos passagens
+            aéreas, pacotes de viagem e muito mais com preços que cabem no seu
+            bolso. Descubra novos destinos, viva experiências únicas e aproveite
+            o melhor de cada viagem sem comprometer seu orçamento. Não perca
+            tempo, sua próxima aventura está a um clique de distância!
+          </p>
+          <div class="btns">
+            <a href="#" class="btn__criar__conta">Crie sua conta</a>
+            <a href="#" class="btn__login">Login</a>
+          </div>
+        </div>
+        <div class="about__img">
+          <img src="./hero-section.png" alt="#" />
+        </div>
+        <img src="./planner.png" alt="" id="planner" />
+      </section>
+      <section class="container servicos">
+        <div class="container__text">
+          <span>Serviços</span>
+          <h2>Conheça nossos serviços</h2>
+        </div>
+        <div class="servicos__list">
+          <div class="servicos__item">
+            <img src="./servicos_item01.png" alt="" />
+            <span> Calculated Weather </span>
+            <p>Built Wicket longer admire do barton vanity itself do in it.</p>
+          </div>
+          <div class="servicos__item destaque">
+            <img src="./servicos_item02.png" alt="" />
+            <span> Calculated Weather </span>
+            <p>Built Wicket longer admire do barton vanity itself do in it.</p>
+          </div>
+          <div class="servicos__item">
+            <img src="./servicos_item03.png" alt="" />
+            <span> Calculated Weather </span>
+            <p>Built Wicket longer admire do barton vanity itself do in it.</p>
+          </div>
+          <div class="servicos__item destaque">
+            <img src="./servicos_item04.png" alt="" />
+            <span> Calculated Weather </span>
+            <p>Built Wicket longer admire do barton vanity itself do in it.</p>
+          </div>
+        </div>
+      </section>
+      <section class="container promocoes">
+        <div class="container__text">
+          <span>Promoções </span>
+          <h2>Promoções da semana</h2>
+        </div>
+        <div class="promocoes__list">
+          <div class="promocoes__item">
+            <img src="./promocoes_01.png" alt="" />
+            <span class="promocoes__item_title">Flores road trip</span>
+            <span class="promocoes__item_tempo">3 Dias</span>
+            <span class="promocoes__item_preco">R$ 1.705,00</span>
+            <div class="promocoes__item_loc">
+              <img src="./icon_localidade.png" alt="" />
+              <small> Paraná, Brazil </small>
+            </div>
+          </div>
+          <div class="promocoes__item">
+            <img src="./promocoes_01.png" alt="" />
+            <span class="promocoes__item_title">Flores road trip</span>
+            <span class="promocoes__item_tempo">3 Dias</span>
+            <span class="promocoes__item_preco">R$ 1.705,00</span>
+            <div class="promocoes__item_loc">
+              <img src="./icon_localidade.png" alt="" />
+              <small> Paraná, Brazil </small>
+            </div>
+          </div>
+          <div class="promocoes__item">
+            <img src="./promocoes_01.png" alt="" />
+            <span class="promocoes__item_title">Flores road trip</span>
+            <span class="promocoes__item_tempo">3 Dias</span>
+            <span class="promocoes__item_preco">R$ 1.705,00</span>
+            <div class="promocoes__item_loc">
+              <img src="./icon_localidade.png" alt="" />
+              <small> Paraná, Brazil </small>
+            </div>
+          </div>
+          <div class="promocoes__item">
+            <img src="./promocoes_01.png" alt="" />
+            <span class="promocoes__item_title">Flores road trip</span>
+            <span class="promocoes__item_tempo">3 Dias</span>
+            <span class="promocoes__item_preco">R$ 1.705,00</span>
+            <div class="promocoes__item_loc">
+              <img src="./icon_localidade.png" alt="" />
+              <small> Paraná, Brazil </small>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container dicas">
+        <div class="container__text dicas_text">
+          <span>Etapas </span>
+          <h2>Dicas para sua viagem</h2>
+          <div class="container__dicas">
+            <div class="dicas__etapas">
+              <div class="dicas__etapas_item">
+                <img src="./etapa01.png" alt="" />
+                <div class="dicas__etapas_item_text">
+                  <span> Escolha seu destino</span>
+                  <p>
+                    Explore destinos incríveis que se encaixam no seu orçamento
+                    e estilo de viagem. Use nosso buscador para filtrar por
+                    preço, tipo de viagem (aventura, descanso, cultura) e datas
+                    flexíveis.
+                  </p>
+                </div>
+              </div>
+              <div class="dicas__etapas_item">
+                <img src="./etapa01.png" alt="" />
+                <div class="dicas__etapas_item_text">
+                  <span> Escolha seu destino</span>
+                  <p>
+                    Explore destinos incríveis que se encaixam no seu orçamento
+                    e estilo de viagem. Use nosso buscador para filtrar por
+                    preço, tipo de viagem (aventura, descanso, cultura) e datas
+                    flexíveis.
+                  </p>
+                </div>
+              </div>
+              <div class="dicas__etapas_item">
+                <img src="./etapa01.png" alt="" />
+                <div class="dicas__etapas_item_text">
+                  <span> Escolha seu destino</span>
+                  <p>
+                    Explore destinos incríveis que se encaixam no seu orçamento
+                    e estilo de viagem. Use nosso buscador para filtrar por
+                    preço, tipo de viagem (aventura, descanso, cultura) e datas
+                    flexíveis.
+                  </p>
+                </div>
+              </div>
+              <div class="dicas__etapas_item">
+                <img src="./etapa01.png" alt="" />
+                <div class="dicas__etapas_item_text">
+                  <span> Escolha seu destino</span>
+                  <p>
+                    Explore destinos incríveis que se encaixam no seu orçamento
+                    e estilo de viagem. Use nosso buscador para filtrar por
+                    preço, tipo de viagem (aventura, descanso, cultura) e datas
+                    flexíveis.
+                  </p>
+                </div>
+              </div>
+              <div class="dicas__etapas_item">
+                <img src="./etapa01.png" alt="" />
+                <div class="dicas__etapas_item_text">
+                  <span> Escolha seu destino</span>
+                  <p>
+                    Explore destinos incríveis que se encaixam no seu orçamento
+                    e estilo de viagem. Use nosso buscador para filtrar por
+                    preço, tipo de viagem (aventura, descanso, cultura) e datas
+                    flexíveis.
+                  </p>
+                </div>
+              </div>
+              <div class="dicas__etapas_item">
+                <img src="./etapa01.png" alt="" />
+                <div class="dicas__etapas_item_text">
+                  <span> Escolha seu destino</span>
+                  <p>
+                    Explore destinos incríveis que se encaixam no seu orçamento
+                    e estilo de viagem. Use nosso buscador para filtrar por
+                    preço, tipo de viagem (aventura, descanso, cultura) e datas
+                    flexíveis.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <img src="./dicas-hero.png" alt="" id="dicas-hero" />
+          </div>
+        </div>
+      </section>
+      <section class="container clientes">
+        <div class="clientes__img">
+          <img src="./hero-review.png" alt="" id="desktop_hero" />
+          <img src="./hero-mobile-review.png" alt="" id="mobile_hero" />
+        </div>
+        <div class="clientes__review">
+          <div class="container__text clientes__titulo">
+            <span>Feedbacks </span>
+            <h2>Avaliações de nossos clientes</h2>
+          </div>
+          <div class="clientes__review__list">
+            <div class="clientes__review__item destaque">
+              <img
+                src="./mockupcliente.png
+              "
+                alt=""
+                id="img__cliente"
+              />
+              <div class="clientes__review__item__text">
+                <span>Flight Ticket</span>
+                <p>Vitae donec pellentesque a aliquam et ultricies auctor.</p>
+                <img src="./star.png" alt="" class="star" />
+              </div>
+            </div>
+            <div class="clientes__review__item">
+              <img
+                src="./mockupcliente.png
+              "
+                alt=""
+                id="img__cliente"
+              />
+              <div class="clientes__review__item__text">
+                <span>Flight Ticket</span>
+                <p>Vitae donec pellentesque a aliquam et ultricies auctor.</p>
+                <img src="./star.png" alt="" class="star" />
+              </div>
+            </div>
+            <div class="clientes__review__item">
+              <img
+                src="./mockupcliente.png
+              "
+                alt=""
+                id="img__cliente"
+              />
+              <div class="clientes__review__item__text">
+                <span>Flight Ticket</span>
+                <p>Vitae donec pellentesque a aliquam et ultricies auctor.</p>
+                <img src="./star.png" alt="" class="star" />
+              </div>
+            </div>
+            <div class="clientes__review__item">
+              <img
+                src="./mockupcliente.png
+              "
+                alt=""
+                id="img__cliente"
+              />
+              <div class="clientes__review__item__text">
+                <span>Flight Ticket</span>
+                <p>Vitae donec pellentesque a aliquam et ultricies auctor.</p>
+                <img src="./star.png" alt="" class="star" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container marcas">
+        <h4>Marcas parceiras</h4>
+        <div class="marcas_container">
+          <div class="marcas_list">
+            <img src="marca-01.png" alt="" />
+            <img src="marca-01.png" alt="" />
+            <img src="marca-01.png" alt="" />
+            <img src="marca-01.png" alt="" />
+            <img src="marca-01.png" alt="" />
+            <img src="marca-01.png" alt="" />
+            <img src="marca-01.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="container subscribe">
+        <h4>
+          Inscreva-se com seu e-mail para receber ofertas exclusivas, promoções
+          imperdíveis e as melhores oportunidades de viagem em primeira mão!
+        </h4>
+        <div class="subscribe-input">
+          <input
+            type="email"
+            placeholder="digite seu e-mail
+          "
+          />
+          <button type="input">Cadastrar</button>
+        </div>
+      </section>
+      <footer class="container footer">
+        <div class="footer__logo">
+          <h4>LOGO</h4>
+          <p>Book your trip in minute, get full Control for much longer.</p>
+        </div>
+        <div class="footer__menu">
+          <div class="footer__menu__list">
+            <span>Company</span>
+            <a href="#">About</a>
+            <a href="#">Carreiras</a>
+            <a href="#">Mobile</a>
+          </div>
+          <div class="footer__menu__list">
+            <span>Company</span>
+            <a href="#">About</a>
+            <a href="#">Carreiras</a>
+            <a href="#">Mobile</a>
+          </div>
+          <div class="footer__menu__list">
+            <span>Company</span>
+            <a href="#">About</a>
+            <a href="#">Carreiras</a>
+            <a href="#">Mobile</a>
+          </div>
+        </div>
+        <div class="footer__midia">
+          <div class="midia__list">
+            <img src="./Social.png" alt="" />
+            <img src="./Social.png" alt="" />
+            <img src="./Social.png" alt="" />
+          </div>
+          <span class="midia__title">Discover Our App</span>
+          <div class="footer__btn">
+            <div class="footer__btn__download">
+              <img src="./google-play 1.png" alt="" />
+              <div class="footer__btn__text">
+                <span class="btn_title"> get it on </span>
+                <span class="btn_text">google play</span>
+              </div>
+            </div>
+            <div class="footer__btn__download">
+              <img src="./google-play 1.png" alt="" />
+              <div class="footer__btn__text">
+                <span class="btn_title"> get it on </span>
+                <span class="btn_text">google play</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
 
-<body>
-  <header>
-    <h2>LOGO</h2>
-    <div class="header__list">
-      <a href="#Serviços">Serviços</a>
-      <a href="#Promoções da Semana">Promoções da Semana</a>
-      <a href="#Dicas">Dicas</a>
-      <a href="#Clientes">Clientes</a>
-    </div>
-  </header>
-  <main>
-    <section class="container about">
-      <div class="about__text">
-        <span>Os melhores destinos te aguardam!</span>
-        <h1>
-          Viva momentos inesquecíveis em viagens que cabem no seu bolso<span id="decor">!</span>
-        </h1>
-        <p>
-          Viajar é a oportunidade perfeita para criar memórias incríveis, e
-          você não precisa gastar muito para isso! Oferecemos passagens
-          aéreas, pacotes de viagem e muito mais com preços que cabem no seu
-          bolso. Descubra novos destinos, viva experiências únicas e aproveite
-          o melhor de cada viagem sem comprometer seu orçamento. Não perca
-          tempo, sua próxima aventura está a um clique de distância!
-        </p>
-        <div class="btns">
-          <a href="#" class="btn__criar__conta">Crie sua conta</a>
-          <a href="#" class="btn__login">Login</a>
-        </div>
-      </div>
-      <div class="about__img">
-        <img src="./hero-section.png" alt="#" />
-      </div>
-      <img src="./planner.png" alt="" id="planner" />
-    </section>
-    <section class="container servicos">
-      <div class="container__text">
-        <span>Serviços</span>
-        <h2>Conheça nossos serviços</h2>
-      </div>
-      <div class="servicos__list">
-        <div class="servicos__item">
-          <img src="./servicos_item01.png" alt="" />
-          <span> Calculated Weather </span>
-          <p>Built Wicket longer admire do barton vanity itself do in it.</p>
-        </div>
-        <div class="servicos__item destaque">
-          <img src="./servicos_item02.png" alt="" />
-          <span> Calculated Weather </span>
-          <p>Built Wicket longer admire do barton vanity itself do in it.</p>
-        </div>
-        <div class="servicos__item">
-          <img src="./servicos_item03.png" alt="" />
-          <span> Calculated Weather </span>
-          <p>Built Wicket longer admire do barton vanity itself do in it.</p>
-        </div>
-        <div class="servicos__item destaque">
-          <img src="./servicos_item04.png" alt="" />
-          <span> Calculated Weather </span>
-          <p>Built Wicket longer admire do barton vanity itself do in it.</p>
-        </div>
-      </div>
-    </section>
-    <section class="container promocoes">
-      <div class="container__text">
-        <span>Promoções </span>
-        <h2>Promoções da semana</h2>
-      </div>
-      <div class="promocoes__list">
-        <div class="promocoes__item">
-          <img src="./promocoes_01.png" alt="" />
-          <span class="promocoes__item_title">Flores road trip</span>
-          <span class="promocoes__item_tempo">3 Dias</span>
-          <span class="promocoes__item_preco">R$ 1.705,00</span>
-          <div class="promocoes__item_loc">
-            <img src="./icon_localidade.png" alt="" />
-            <small> Paraná, Brazil </small>
-          </div>
-        </div>
-        <div class="promocoes__item">
-          <img src="./promocoes_01.png" alt="" />
-          <span class="promocoes__item_title">Flores road trip</span>
-          <span class="promocoes__item_tempo">3 Dias</span>
-          <span class="promocoes__item_preco">R$ 1.705,00</span>
-          <div class="promocoes__item_loc">
-            <img src="./icon_localidade.png" alt="" />
-            <small> Paraná, Brazil </small>
-          </div>
-        </div>
-        <div class="promocoes__item">
-          <img src="./promocoes_01.png" alt="" />
-          <span class="promocoes__item_title">Flores road trip</span>
-          <span class="promocoes__item_tempo">3 Dias</span>
-          <span class="promocoes__item_preco">R$ 1.705,00</span>
-          <div class="promocoes__item_loc">
-            <img src="./icon_localidade.png" alt="" />
-            <small> Paraná, Brazil </small>
-          </div>
-        </div>
-        <div class="promocoes__item">
-          <img src="./promocoes_01.png" alt="" />
-          <span class="promocoes__item_title">Flores road trip</span>
-          <span class="promocoes__item_tempo">3 Dias</span>
-          <span class="promocoes__item_preco">R$ 1.705,00</span>
-          <div class="promocoes__item_loc">
-            <img src="./icon_localidade.png" alt="" />
-            <small> Paraná, Brazil </small>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="container dicas">
-      <div class="container__text dicas_text">
-        <span>Etapas </span>
-        <h2>Dicas para sua viagem</h2>
-        <div class="container__dicas">
-          <div class="dicas__etapas">
-            <div class="dicas__etapas_item">
-              <img src="./etapa01.png" alt="" />
-              <div class="dicas__etapas_item_text">
-                <span> Escolha seu destino</span>
-                <p>
-                  Explore destinos incríveis que se encaixam no seu orçamento
-                  e estilo de viagem. Use nosso buscador para filtrar por
-                  preço, tipo de viagem (aventura, descanso, cultura) e datas
-                  flexíveis.
-                </p>
-              </div>
-            </div>
-            <div class="dicas__etapas_item">
-              <img src="./etapa01.png" alt="" />
-              <div class="dicas__etapas_item_text">
-                <span> Escolha seu destino</span>
-                <p>
-                  Explore destinos incríveis que se encaixam no seu orçamento
-                  e estilo de viagem. Use nosso buscador para filtrar por
-                  preço, tipo de viagem (aventura, descanso, cultura) e datas
-                  flexíveis.
-                </p>
-              </div>
-            </div>
-            <div class="dicas__etapas_item">
-              <img src="./etapa01.png" alt="" />
-              <div class="dicas__etapas_item_text">
-                <span> Escolha seu destino</span>
-                <p>
-                  Explore destinos incríveis que se encaixam no seu orçamento
-                  e estilo de viagem. Use nosso buscador para filtrar por
-                  preço, tipo de viagem (aventura, descanso, cultura) e datas
-                  flexíveis.
-                </p>
-              </div>
-            </div>
-            <div class="dicas__etapas_item">
-              <img src="./etapa01.png" alt="" />
-              <div class="dicas__etapas_item_text">
-                <span> Escolha seu destino</span>
-                <p>
-                  Explore destinos incríveis que se encaixam no seu orçamento
-                  e estilo de viagem. Use nosso buscador para filtrar por
-                  preço, tipo de viagem (aventura, descanso, cultura) e datas
-                  flexíveis.
-                </p>
-              </div>
-            </div>
-            <div class="dicas__etapas_item">
-              <img src="./etapa01.png" alt="" />
-              <div class="dicas__etapas_item_text">
-                <span> Escolha seu destino</span>
-                <p>
-                  Explore destinos incríveis que se encaixam no seu orçamento
-                  e estilo de viagem. Use nosso buscador para filtrar por
-                  preço, tipo de viagem (aventura, descanso, cultura) e datas
-                  flexíveis.
-                </p>
-              </div>
-            </div>
-            <div class="dicas__etapas_item">
-              <img src="./etapa01.png" alt="" />
-              <div class="dicas__etapas_item_text">
-                <span> Escolha seu destino</span>
-                <p>
-                  Explore destinos incríveis que se encaixam no seu orçamento
-                  e estilo de viagem. Use nosso buscador para filtrar por
-                  preço, tipo de viagem (aventura, descanso, cultura) e datas
-                  flexíveis.
-                </p>
-              </div>
-            </div>
-          </div>
-          <img src="./dicas-hero.png" alt="" id="dicas-hero" />
-        </div>
-      </div>
-    </section>
-    <section class="container clientes">
-      <div class="clientes__img">
-        <img src="./hero-review.png" alt="" id="desktop_hero" />
-        <img src="./hero-mobile-review.png" alt="" id="mobile_hero" />
-      </div>
-      <div class="clientes__review">
-        <div class="container__text clientes__titulo">
-          <span>Feedbacks </span>
-          <h2>Avaliações de nossos clientes</h2>
-        </div>
-        <div class="clientes__review__list">
-          <div class="clientes__review__item destaque">
-            <img src="./mockupcliente.png
-              " alt="" id="img__cliente" />
-            <div class="clientes__review__item__text">
-              <span>Flight Ticket</span>
-              <p>Vitae donec pellentesque a aliquam et ultricies auctor.</p>
-              <img src="./star.png" alt="" class="star" />
-            </div>
-          </div>
-          <div class="clientes__review__item">
-            <img src="./mockupcliente.png
-              " alt="" id="img__cliente" />
-            <div class="clientes__review__item__text">
-              <span>Flight Ticket</span>
-              <p>Vitae donec pellentesque a aliquam et ultricies auctor.</p>
-              <img src="./star.png" alt="" class="star" />
-            </div>
-          </div>
-          <div class="clientes__review__item">
-            <img src="./mockupcliente.png
-              " alt="" id="img__cliente" />
-            <div class="clientes__review__item__text">
-              <span>Flight Ticket</span>
-              <p>Vitae donec pellentesque a aliquam et ultricies auctor.</p>
-              <img src="./star.png" alt="" class="star" />
-            </div>
-          </div>
-          <div class="clientes__review__item">
-            <img src="./mockupcliente.png
-              " alt="" id="img__cliente" />
-            <div class="clientes__review__item__text">
-              <span>Flight Ticket</span>
-              <p>Vitae donec pellentesque a aliquam et ultricies auctor.</p>
-              <img src="./star.png" alt="" class="star" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="container marcas">
-      <h4>Marcas parceiras</h4>
-      <div class="marcas_container">
-        <div class="marcas_list">
-          <img src="marca-01.png" alt="">
-          <img src="marca-01.png" alt="">
-          <img src="marca-01.png" alt="">
-          <img src="marca-01.png" alt="">
-          <img src="marca-01.png" alt="">
-          <img src="marca-01.png" alt="">
-          <img src="marca-01.png" alt="">
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <img src="dcore.png" alt="" id="decore" />
-</body>
-
+    <img src="dcore.png" alt="" id="decore" />
+  </body>
 </html>
