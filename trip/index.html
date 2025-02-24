@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,10 +13,9 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
     <header>
-      <h2>LOGO</h2>
+      <img src="./logo.png" alt="Logo da empresa" />
       <div class="header__list">
         <a href="#Serviços">Serviços</a>
         <a href="#Promoções da Semana">Promoções da Semana</a>
@@ -60,23 +59,35 @@
         <div class="servicos__list">
           <div class="servicos__item">
             <img src="./servicos_item01.png" alt="" />
-            <span> Calculated Weather </span>
-            <p>Built Wicket longer admire do barton vanity itself do in it.</p>
+            <span> Preços Competitivos</span>
+            <p>
+              Oferecemos preços acessíveis e promoções exclusivas para nossos
+              clientes, garantindo que você viaje mais pagando menos.
+            </p>
           </div>
           <div class="servicos__item destaque">
             <img src="./servicos_item02.png" alt="" />
-            <span> Calculated Weather </span>
-            <p>Built Wicket longer admire do barton vanity itself do in it.</p>
+            <span> Seguro de Bagagem </span>
+            <p>
+              Oferecemos seguro de bagagem incluso em todas as passagens,
+              garantindo cobertura para extravios, danos ou atrasos.
+            </p>
           </div>
           <div class="servicos__item">
             <img src="./servicos_item03.png" alt="" />
-            <span> Calculated Weather </span>
-            <p>Built Wicket longer admire do barton vanity itself do in it.</p>
+            <span> Suporte 24/7</span>
+            <p>
+              Nossa equipe de suporte está disponível 24 horas por dia, 7 dias
+              por semana, para resolver qualquer dúvida ou problema.
+            </p>
           </div>
           <div class="servicos__item destaque">
-            <img src="./servicos_item04.png" alt="" />
-            <span> Calculated Weather </span>
-            <p>Built Wicket longer admire do barton vanity itself do in it.</p>
+            <img src="./desconto.png" alt="" />
+            <span> Alertas de Ofertas </span>
+            <p>
+              Cadastre-se para receber alertas de promoções e descontos
+              exclusivos diretamente no seu e-mail ou celular.
+            </p>
           </div>
         </div>
       </section>
@@ -87,43 +98,43 @@
         </div>
         <div class="promocoes__list">
           <div class="promocoes__item">
-            <img src="./promocoes_01.png" alt="" />
-            <span class="promocoes__item_title">Flores road trip</span>
-            <span class="promocoes__item_tempo">3 Dias</span>
-            <span class="promocoes__item_preco">R$ 1.705,00</span>
+            <img src="./iguacu.jpg" alt="" id="promo__img" />
+            <span class="promocoes__item_title">Foz do iguaçu</span>
+            <span class="promocoes__item_tempo">5 Dias</span>
+            <span class="promocoes__item_preco">R$ 2.500,00</span>
             <div class="promocoes__item_loc">
               <img src="./icon_localidade.png" alt="" />
-              <small> Paraná, Brazil </small>
+              <small> Paraná, Brasil </small>
             </div>
           </div>
           <div class="promocoes__item">
-            <img src="./promocoes_01.png" alt="" />
-            <span class="promocoes__item_title">Flores road trip</span>
+            <img src="./gramado 1.png" alt="" id="promo__img" />
+            <span class="promocoes__item_title">Gramado</span>
             <span class="promocoes__item_tempo">3 Dias</span>
-            <span class="promocoes__item_preco">R$ 1.705,00</span>
+            <span class="promocoes__item_preco">R$ 2.705,00</span>
             <div class="promocoes__item_loc">
               <img src="./icon_localidade.png" alt="" />
-              <small> Paraná, Brazil </small>
+              <small> Rio grande do sul, Brasil </small>
             </div>
           </div>
           <div class="promocoes__item">
-            <img src="./promocoes_01.png" alt="" />
-            <span class="promocoes__item_title">Flores road trip</span>
-            <span class="promocoes__item_tempo">3 Dias</span>
+            <img src="./maranhenses 1.png" alt="" id="promo__img" />
+            <span class="promocoes__item_title">Lençois Maranhenses</span>
+            <span class="promocoes__item_tempo">5 Dias</span>
             <span class="promocoes__item_preco">R$ 1.705,00</span>
             <div class="promocoes__item_loc">
               <img src="./icon_localidade.png" alt="" />
-              <small> Paraná, Brazil </small>
+              <small> Maranhão, Brasil </small>
             </div>
           </div>
           <div class="promocoes__item">
-            <img src="./promocoes_01.png" alt="" />
-            <span class="promocoes__item_title">Flores road trip</span>
+            <img src="./cristo_redentor.jpg" alt="" id="promo__img" />
+            <span class="promocoes__item_title">Cristo Redentor</span>
             <span class="promocoes__item_tempo">3 Dias</span>
             <span class="promocoes__item_preco">R$ 1.705,00</span>
             <div class="promocoes__item_loc">
               <img src="./icon_localidade.png" alt="" />
-              <small> Paraná, Brazil </small>
+              <small> Rio de janeiro, Brasil </small>
             </div>
           </div>
         </div>
@@ -290,40 +301,42 @@
             <img src="marca-01.png" alt="" />
           </div>
         </div>
-      </section>
-      <section class="container subscribe">
-        <h4>
-          Inscreva-se com seu e-mail para receber ofertas exclusivas, promoções
-          imperdíveis e as melhores oportunidades de viagem em primeira mão!
-        </h4>
-        <div class="subscribe-input">
-          <input
-            type="email"
-            placeholder="digite seu e-mail
-          "
-          />
-          <button type="input">Cadastrar</button>
+        <div class="subscribe">
+          <h3>
+            Inscreva-se com seu e-mail para receber ofertas exclusivas,
+            promoções imperdíveis e as melhores oportunidades de viagem em
+            primeira mão!
+          </h3>
+          <div class="input__subscribe">
+            <input type="email" placeholder="digite seu email" />
+            <button>Cadastrar</button>
+          </div>
         </div>
       </section>
-      <footer class="container footer">
-        <div class="footer__logo">
-          <h4>LOGO</h4>
-          <p>Book your trip in minute, get full Control for much longer.</p>
+    </main>
+    <footer class="footer">
+      <div class="footer__links">
+        <div class="footer__about">
+          <h5>LOGO</h5>
+          <p>
+            Book your trip in minute,<br />
+            get full Control for much longer.
+          </p>
         </div>
-        <div class="footer__menu">
-          <div class="footer__menu__list">
+        <div class="footer__list">
+          <div class="footer__list__item">
             <span>Company</span>
             <a href="#">About</a>
             <a href="#">Carreiras</a>
             <a href="#">Mobile</a>
           </div>
-          <div class="footer__menu__list">
+          <div class="footer__list__item">
             <span>Company</span>
             <a href="#">About</a>
             <a href="#">Carreiras</a>
             <a href="#">Mobile</a>
           </div>
-          <div class="footer__menu__list">
+          <div class="footer__list__item">
             <span>Company</span>
             <a href="#">About</a>
             <a href="#">Carreiras</a>
@@ -331,31 +344,13 @@
           </div>
         </div>
         <div class="footer__midia">
-          <div class="midia__list">
-            <img src="./Social.png" alt="" />
-            <img src="./Social.png" alt="" />
-            <img src="./Social.png" alt="" />
-          </div>
-          <span class="midia__title">Discover Our App</span>
-          <div class="footer__btn">
-            <div class="footer__btn__download">
-              <img src="./google-play 1.png" alt="" />
-              <div class="footer__btn__text">
-                <span class="btn_title"> get it on </span>
-                <span class="btn_text">google play</span>
-              </div>
-            </div>
-            <div class="footer__btn__download">
-              <img src="./google-play 1.png" alt="" />
-              <div class="footer__btn__text">
-                <span class="btn_title"> get it on </span>
-                <span class="btn_text">google play</span>
-              </div>
-            </div>
-          </div>
+          <img src="./social1.png" alt="" />
+          <img src="./social1.png" alt="" />
+          <img src="./social1.png" alt="" />
         </div>
-      </footer>
-    </main>
+      </div>
+      <small>todos direitos reservados @danieborba</small>
+    </footer>
 
     <img src="dcore.png" alt="" id="decore" />
   </body>
