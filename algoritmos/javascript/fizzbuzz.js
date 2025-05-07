@@ -1,7 +1,7 @@
 /*
 Imprima os números de 1 a 100, substituindo múltiplos de 3 por "Fizz", 
 múltiplos de 5 por "Buzz" e de ambos por "FizzBuzz" (FizzBuzz).
-Calcule o fatorial de um número (ex: 5! = 120).
+
 */
 
 for (let i = 1; i <= 100; i++) {
